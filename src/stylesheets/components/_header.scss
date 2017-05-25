@@ -1,0 +1,185 @@
+.header-container {
+  background-color: $color-white-a;
+  width: 100%;
+  height: $header-size;
+  padding-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  @include transition(height 0.2s, padding-top 0.2s);
+
+  .header-item-left {
+    margin-left: 22px;
+
+    .tamuseum-container {
+      width: $tamuseumLogoSize;
+      height: $tamuseumLogoSize;
+      display: inline-block;
+      vertical-align: top;
+      @include transition(all 0.2s);
+
+      .tamuseum-logo {
+        width: 100%;
+        height: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .exhibition-title {
+      display: inline-block;
+      width: calc(100% - #{$tamuseumLogoSize});
+      text-align: left;
+      padding-left: 40px;
+      margin-top: -10px;
+      @include transition(all 0.2s);
+
+      .title-line {
+        text-align: left;
+        line-height: 1.1;
+        font-family: PFEef, "HelveticaNeue-Heavy", "Helvetica Neue Heavy", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0 0 5px 0;
+        display: block;
+        color: $color-green;
+        pointer-events: none;
+        @include transition(all 0.2s);
+      }
+
+    }
+
+  }
+
+  .header-navigation {
+    margin-right: 22px;
+
+    .nav-container {
+      float: right;
+      margin-right: 70px;
+
+      .nav-wrapper {
+        text-align: left;
+
+        .nav-site {
+          margin-bottom: 5px;
+          @include transition(all 0.2s);
+        }
+
+        .nav-site-item {
+          font-weight: bold;
+          display: inline-block;
+          color: $color-black;
+          margin: 0 10px;
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 1.2;
+          font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          @include transition(font-size 0.2s, line-height 0.2s);
+
+          &:first-of-type {
+            margin-left: 0;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+          &:hover {
+            color: rgb(255, 249, 0);
+          }
+        }
+        .nav-site-item.active {
+          color: $color-green;
+        }
+
+        .nav-projects-item {
+          font-weight: bold;
+          color: $color-gray;
+          cursor: pointer;
+          font-size: 20px;
+          line-height: 1.2;
+          font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          @include transition(font-size 0.2s, line-height 0.2s);
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .now-container {
+      background-color: $color-green;
+      width: 42px;
+      height: 90px;
+      right: 0;
+      top: 36px;
+      position: fixed;
+      cursor: pointer;
+      @include transition(top 0.2s);
+
+      &:hover {
+        .now-letter {
+          color: $color-white;
+        }
+      }
+
+      .now-wrapper {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        @include transform(translateY(-50%));
+      }
+
+      .now-letter {
+        color: $color-black;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.header-container.smaller {
+  height: $header-size-small;
+  padding-top: 25px;
+
+  .header-item-left {
+    .tamuseum-container {
+      width: 35px;
+      height: 35px;
+    }
+    .exhibition-title {
+      .title-line {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .header-navigation {
+
+    .nav-container {
+      .nav-wrapper {
+        .nav-site-item {
+          font-size: 16px;
+        }
+        .nav-projects-item {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .now-container {
+      top: 25px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "project-1",
+    "title": "Khumjung Secondary School, Nepal",
+    "date": "2017",
+    "creator": "Shigeru Ban + Voluntary Architects' Network(VAN)",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "knowledge"]
+  },
+  {
+    "id": "project-2",
+    "title": "Earthquake Desk",
+    "date": "2016",
+    "creator": "Ido Bruno and Arthur Brutter",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "technology"]
+  },
+  {
+    "id": "project-3",
+    "title": "Disaster Preparedness Open Online Course",
+    "date": "Since 2013",
+    "creator": "Michael Beach, Center for Instructional Development and Distance Education at the University of Pittsburgh",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "diy"]
+  },
+  {
+    "id": "project-4",
+    "title": "OLIVE",
+    "date": "Since 2011",
+    "creator": "Nosigner Design",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "storytelling"]
+  },
+  {
+    "id": "project-5",
+    "title": "Khumjung Secondary School, Nepal",
+    "date": "2017",
+    "creator": "Shigeru Ban + Voluntary Architects' Network(VAN)",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "knowledge"]
+  },
+  {
+    "id": "project-6",
+    "title": "Earthquake Desk",
+    "date": "2016",
+    "creator": "Ido Bruno and Arthur Brutter",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "technology"]
+  },
+  {
+    "id": "project-7",
+    "title": "Disaster Preparedness Open Online Course",
+    "date": "Since 2013",
+    "creator": "Michael Beach, Center for Instructional Development and Distance Education at the University of Pittsburgh",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "diy"]
+  },
+  {
+    "id": "project-8",
+    "title": "OLIVE",
+    "date": "Since 2011",
+    "creator": "Nosigner Design",
+    "image": "./src/assets/images/project-01.jpg",
+    "linkout": "",
+    "category": ["all", "storytelling"]
+  },
+  {},
+  {},
+  {}
+]
