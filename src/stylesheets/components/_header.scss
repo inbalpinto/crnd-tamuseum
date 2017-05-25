@@ -127,6 +127,11 @@
       &:hover {
         width: 47px;
       }
+      &:active {
+        .now-letter {
+          color: $color-white;
+        }
+      }
 
       .now-wrapper {
         width: 42px;
