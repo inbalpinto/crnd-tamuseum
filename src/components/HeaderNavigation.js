@@ -6,10 +6,10 @@ class Header extends Component {
         this.state = {
             category: "all"
         };
-        this.handleCategoryChange = this.handleCategoryChange.bind(this);
+        this.handleCategoryClick = this.handleCategoryClick.bind(this);
     }
 
-    handleCategoryChange(e) {
+    handleCategoryClick(e) {
         e.stopPropagation();
         var categoryClickedName = e.target.className;
         var category = categoryClickedName.replace("nav-projects-item projects-", "");
@@ -27,11 +27,11 @@ class Header extends Component {
                             <div className="nav-site-item site-publication">Publication</div>
                         </div>
                         <div className="nav-projects">
-                            <div className="nav-projects-item projects-all" onClick={this.handleCategoryChange}>All</div>
-                            <div className="nav-projects-item projects-knowledge" onClick={this.handleCategoryChange}>Sharing Knowledge</div>
-                            <div className="nav-projects-item projects-technology" onClick={this.handleCategoryChange}>Social Technology</div>
-                            <div className="nav-projects-item projects-diy" onClick={this.handleCategoryChange}>DIY</div>
-                            <div className="nav-projects-item projects-storytelling" onClick={this.handleCategoryChange}>Storytelling</div>
+                            <div className="nav-projects-item projects-all" onClick={this.handleCategoryClick}>All</div>
+                            <div className="nav-projects-item projects-knowledge" onClick={this.handleCategoryClick}>Sharing Knowledge</div>
+                            <div className="nav-projects-item projects-technology" onClick={this.handleCategoryClick}>Social Technology</div>
+                            <div className="nav-projects-item projects-diy" onClick={this.handleCategoryClick}>DIY</div>
+                            <div className="nav-projects-item projects-storytelling" onClick={this.handleCategoryClick}>Storytelling</div>
                         </div>
                     </div>
                 </div>
