@@ -6,34 +6,15 @@ class Header extends Component {
         this.state = {
             category: "all"
         };
-        this.handleCategoryChangeAll = this.handleCategoryChangeAll.bind(this);
-        this.handleCategoryChangeKnowledge = this.handleCategoryChangeKnowledge.bind(this);
-        this.handleCategoryChangeTech = this.handleCategoryChangeTech.bind(this);
-        this.handleCategoryChangeDIY = this.handleCategoryChangeDIY.bind(this);
-        this.handleCategoryChangeStorytelling = this.handleCategoryChangeStorytelling.bind(this);
+        this.handleCategoryChange = this.handleCategoryChange.bind(this);
     }
 
-    handleCategoryChangeAll(e) {
-        var category = "all";
+    handleCategoryChange(e) {
+        e.stopPropagation();
+        var categoryClickedName = e.target.className;
+        var category = categoryClickedName.replace("nav-projects-item projects-", "");
         this.props.onChangeCategory(category);
     }
-    handleCategoryChangeKnowledge(e) {
-        var category = "knowledge";
-        this.props.onChangeCategory(category);
-    }
-    handleCategoryChangeTech(e) {
-        var category = "technology";
-        this.props.onChangeCategory(category);
-    }
-    handleCategoryChangeDIY(e) {
-        var category = "diy";
-        this.props.onChangeCategory(category);
-    }
-    handleCategoryChangeStorytelling(e) {
-        var category = "storytelling";
-        this.props.onChangeCategory(category);
-    }
-
 
     render() {
         return (
@@ -46,11 +27,11 @@ class Header extends Component {
                             <div className="nav-site-item site-publication">Publication</div>
                         </div>
                         <div className="nav-projects">
-                            <div className="nav-projects-item projects-all" onClick={this.handleCategoryChangeAll}>All</div>
-                            <div className="nav-projects-item projects-knowledge" onClick={this.handleCategoryChangeKnowledge}>Sharing Knowledge</div>
-                            <div className="nav-projects-item projects-tech" onClick={this.handleCategoryChangeTech}>Social Technology</div>
-                            <div className="nav-projects-item projects-diy" onClick={this.handleCategoryChangeDIY}>DIY</div>
-                            <div className="nav-projects-item projects-storytelling" onClick={this.handleCategoryChangeStorytelling}>Storytelling</div>
+                            <div className="nav-projects-item projects-all" onClick={this.handleCategoryChange}>All</div>
+                            <div className="nav-projects-item projects-knowledge" onClick={this.handleCategoryChange}>Sharing Knowledge</div>
+                            <div className="nav-projects-item projects-technology" onClick={this.handleCategoryChange}>Social Technology</div>
+                            <div className="nav-projects-item projects-diy" onClick={this.handleCategoryChange}>DIY</div>
+                            <div className="nav-projects-item projects-storytelling" onClick={this.handleCategoryChange}>Storytelling</div>
                         </div>
                     </div>
                 </div>
