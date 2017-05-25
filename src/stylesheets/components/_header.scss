@@ -122,12 +122,10 @@
       top: 36px;
       position: fixed;
       cursor: pointer;
-      @include transition(top 0.2s);
+      @include transition(top 0.2s, width 0.2s);
 
       &:hover {
-        .now-letter {
-          color: $color-white;
-        }
+        width: 47px;
       }
 
       .now-wrapper {
