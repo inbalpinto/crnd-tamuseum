@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/crnd-tamuseum">
         <App />
     </BrowserRouter>,
     document.getElementById('root')

@@ -6,8 +6,6 @@ import Publication from './Publication';
 
 class Main extends Component {
   render() {
-//      <Route exact path='/projects' component={ProjectsContainer}/>
-
       return (
       <main>
           <Switch>
