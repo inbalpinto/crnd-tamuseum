@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import ProjectsContainer from './components/ProjectsContainer';
+import Main from './components/Main';
+// import ProjectsContainer from './components/ProjectsContainer';
 import Footer from './components/Footer';
 
 import './stylesheets/main.css';
@@ -19,10 +20,12 @@ class App extends Component {
     }
 
     render() {
+        /*<ProjectsContainer categoryView={this.state.category}/>*/
+
         return (
             <div className="App">
                 <Header onChangeCategory={this.changeCategory}/>
-                <ProjectsContainer categoryView={this.state.category}/>
+                <Main categoryView={this.state.category}/>
                 <Footer />
             </div>
         );
