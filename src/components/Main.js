@@ -9,7 +9,8 @@ class Main extends Component {
       return (
       <main>
           <Switch>
-              <Route exact path='/' component={ProjectsContainer}/>
+              {/*<Route exact path='/' component={ProjectsContainer}/>*/}
+              <Redirect exact from='/' to='/projects'/>
               <Route exact path='/projects' component={ProjectsContainer}/>
               <Redirect exact from='/projects/all' to='/projects'/>
               <Route path='/projects/*' component={ProjectsContainer}/>
